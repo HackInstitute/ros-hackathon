@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: 'Lato', sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #30093f;
 }
 
 html {
@@ -63,10 +63,10 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(48, 9, 63,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #30093f;
 }
 
 .navbar-custom .navbar-brand {
@@ -94,7 +94,7 @@ a:focus {
 
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(48, 9, 63,.3);
 }
 
 .navbar-custom .nav li a {
@@ -107,7 +107,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(48, 9, 63,.3);
 }
 
 @media(min-width:767px) {
@@ -123,11 +123,11 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #30093f;
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid rgba(48, 9, 63,.3);
     }
 }
 
@@ -138,7 +138,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/header-bosch-2.jpg) no-repeat bottom center scroll;
+    background: url(../img/header-bosch-3.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -153,10 +153,13 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    color: #30093f;
+    margin-bottom: 20px;
 }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    color: #c22d0f;
 }
 
 @media(min-width:767px) {
@@ -178,11 +181,12 @@ a:focus {
     width: 70px;
     height: 70px;
     margin-top: 15px;
+    margin-bottom: 400px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #bf212f;
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: #bf212f;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -192,7 +196,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: #bf212f;
     background: rgba(255,255,255,.1);
 }
 
@@ -249,7 +253,8 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 .download-section {
@@ -265,14 +270,13 @@ a:focus {
 }
 
 #map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
+    height: 500px;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 150px;
+        padding-top: 70px;
+        padding-bottom: 50px;
     }
 
     .download-section {
@@ -281,7 +285,6 @@ a:focus {
 
     #map {
         height: 400px;
-        margin-top: 250px;
     }
 }
 
@@ -309,7 +312,7 @@ a:focus {
 }
 
 ul.banner-social-buttons {
-    margin-top: 0;
+    margin-top: 30px;
 }
 
 @media(max-width:1199px) {
@@ -332,6 +335,7 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+    background-color: #30093f;
 }
 
 footer p {
@@ -357,7 +361,32 @@ img::selection {
 img::-moz-selection {
     background: 0 0;
 }
+.logo {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+#contact {
+   background-color: #30093f;
+   width: 100%;
+}
+#sponsors {
+   background-color: #30093f;
+   width: 100%;
+}
+#location {
+   background-color: #ded6b4;
+   width: 100%;
+}
+#location p {
+    color: #30093f;
+}
+
+#location h2 {
+    color: #30093f;
 }
