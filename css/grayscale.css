@@ -160,20 +160,28 @@ a:focus {
 .intro .intro-body .intro-text {
     font-size: 18px;
     color: #c22d0f;
+    margin-bottom: 0;
 }
 
+.sub-text {
+    font-size: 12px;
+    color: #30093f;
+    margin-bottom: 10px;
+}
 @media(min-width:767px) {
     .intro {
         height: 100%;
         padding: 0;
     }
     .intro .intro-body .brand-heading {
-        font-size: 100px;
-        padding-top: 150px;
+        font-size: 80px;
     }
 
     .intro .intro-body .intro-text {
-        font-size: 35px;
+        font-size: 30px;
+    }
+    .sub-text {
+    font-size: 18px;
     }
 }
 @media (min-width: 1200px) {
@@ -404,4 +412,8 @@ body {
 
 #location h2 {
     color: #30093f;
+}
+
+.robocop {
+
 }
