@@ -105,11 +105,11 @@ int main(int argc, char** argv)
 
   // limiter for close obstacles
   teleop->addAction(new ArActionLimiterForwards("speed limiter near", 
-						300, 600, 250), 95);
+						300, 600, 250), 95); // basic values 300,600,250
 
   // limiter for far away obstacles
   teleop->addAction(new ArActionLimiterForwards("speed limiter far", 
-					       300, 1100, 400), 90);
+					       300, 1100, 400), 90); //basic values 300,1100,400
 
   // limiter so we don't bump things backwards
   teleop->addAction(new ArActionLimiterBackwards, 85);

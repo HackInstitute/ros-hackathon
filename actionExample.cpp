@@ -182,7 +182,7 @@ ArActionDesired *ActionGo::fire(ArActionDesired currentDesired)
   if (range > myStopDistance)
   {
     // just an arbitrary speed based on the range
-    speed = range * .3;
+    speed = range * .3; //changed from 0.3 to 0.1, lower the number, quicker to start slowing down
     // if that speed is greater than our max, cap it
     if (speed > myMaxSpeed)
       speed = myMaxSpeed;
@@ -246,7 +246,8 @@ ArActionDesired *ActionTurn::fire(ArActionDesired currentDesired)
     return NULL;
   }
   // Get the left readings and right readings off of the sonar
-  leftRange = (mySonar->currentReadingPolar(0, 100) - 
+  leftRange = (mySonar->currentReadingPolar(0, 100) - //made change from 100 to 100, 
+                                                     //lower the noumber, shorter turn
         myRobot->getRobotRadius());
   rightRange = (mySonar->currentReadingPolar(-100, 0) - 
         myRobot->getRobotRadius());
@@ -275,7 +276,7 @@ ArActionDesired *ActionTurn::fire(ArActionDesired currentDesired)
   // we need to
   else 
   {
-    myTurning = 1;
+    myTurning = 1; //made change from 1 to 1
     myDesired.setDeltaHeading(myTurnAmount * myTurning);
   }
   // return a pointer to the actionDesired, so resolver knows what to do
